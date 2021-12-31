@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc đầu năm</title>
+    <style>
+        #Start_screen{
+            display:table;
+            padding:30px;
+            margin-left: 500px;
+            text-align:center;
+            background-color: rgb(167, 167, 224);
+        }
+        .big{
+            font-size: large;
+        }
+        #Display_it{
+            font-size: 20px;
+            text-align: center;
+            display:table;
+            padding:40px;
+            margin-left: 500px;
+            background-color: rgb(184, 226, 69);
+        }
+    </style>
+</head>
+<body>
+    <video  id="vid" width="1" height="1" autoplay loop>
+        <source src="Toll.mp4" type="video/mp4">
+    </video>
+    <div id="Start_screen">
+        <h1>Nhập tên của bạn</h1>
+        <input type="text" id="name" placeholder="Tên của bạn"> 
+        <b><p class="big">Chọn nhạc</p>
+        <p class="big">Super Idol chúc mừng Năm mới(nhập "S")</p>
+        <p class="big">Chúc mừng Năm mới(nhập "C")</p></b>
+        <input type="text" id="music" placeholder="S hoặc C">
+        <br><br>
+        <button onclick="clicked()" id="OK">Ok</button>
+    </div>
+    <br>
+    <br>
+    <div id="Display_it">
+        Chúc bạn <span id="name_input"></span> 12 tháng phú quý,<br>
+        365 ngày phát tài,<br>
+        8760 giờ sung túc,<br>
+        525600 phút thành công,<br>
+        31536000 giây vạn sự như ý.
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
